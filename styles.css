@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 1px solid black;
+   font-family: Bitter;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh
+
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.header,
+.footer {
+    display: flex;
+    justify-content: space-around;
+    place-items: center;
+    height: 50px;
+}
+
+.header {
+    font-size: 25px;
+}
+
+.footer ul li {
+    display: inline;
+    padding: 0 30px 0 30px;
+    font-weight: 700;
+}
+
+/* Styles for main objects */
+
+.shapes {
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.ogee{
+    width: 75px;
+    height: 75px;
+}
+
+.pr9{
+    width: 75px;
+    height: 75px;
+}
+
+.roundTop {
+    width: 75px;
+    height: 75px;
+}
+
+.headstone {
+    width: 300px;
+    height: 350px;
+}
+
+.information {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.informationLeft,
+.informationRight {
+    width: 150px;
+    height: 175px;
+}
+
