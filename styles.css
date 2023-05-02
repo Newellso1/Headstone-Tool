@@ -1,8 +1,9 @@
 * {
+    color: #ee8262;
     margin: 0;
     padding: 0;
-    border: 1px solid black;
-   font-family: Bitter;
+    /* border: 1px solid black; */
+    font-family: Bitter;
 }
 
 body {
@@ -13,19 +14,24 @@ body {
 }
 
 .main {
+    background-color: #ebebeb;
     display: flex;
     flex-direction: column;
     flex: 1;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 5px;
     align-items: center;
 }
 
 .header,
 .footer {
+    color: #ee8262;
     display: flex;
     justify-content: space-around;
     place-items: center;
     height: 50px;
+    background-color: #eaeaae95;
+    
 }
 
 .header {
@@ -63,22 +69,75 @@ body {
 }
 
 .headstone {
+    border: 2px solid #ee826285;
+    border-radius: 10px;
     width: 300px;
     height: 350px;
+    
 }
 
 .information {
-    width: 300px;
-    height: 200px;
+    border: 2px solid #ee826285;
+    border-radius: 10px;
+    padding: 0 10px;
+    width: 320px;
+    height: 225px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    
 }
 
-.informationLeft,
+.informationLeft {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 2px;
+    border-radius: 3px;
+}
+
 .informationRight {
     width: 150px;
-    height: 175px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 3px;
+    padding: 3px;
+    border-radius: 3px;
+
 }
 
+.informationLeft select {
+    width: 145px;
+    height: 20px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.informationLeft, .informationRight label {
+    font-size: 12px;
+}
+
+.informationLeft input {
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 3px;
+    width: 140px;
+    font-size: 12px;
+}
+
+
+.informationRight textarea {
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 12px;
+}
