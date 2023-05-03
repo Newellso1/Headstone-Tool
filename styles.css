@@ -30,12 +30,15 @@ body {
     justify-content: space-around;
     place-items: center;
     height: 50px;
-    background-color: #eaeaae95;
-    
 }
 
 .header {
+    background-color: #eaeaae95;
     font-size: 25px;
+}
+
+.footer {
+    background-color: #eaeaae;
 }
 
 .footer ul li {
@@ -47,7 +50,7 @@ body {
 /* Styles for main objects */
 
 .shapes {
-    width: 300px;
+    width: 320px;
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
@@ -55,17 +58,22 @@ body {
 
 .ogee{
     width: 75px;
-    height: 75px;
+    height: 75px; 
 }
 
 .pr9{
     width: 75px;
-    height: 75px;
+    height: 75px; 
 }
 
 .roundTop {
     width: 75px;
-    height: 75px;
+    height: 75px; 
+}
+
+.ogee, .pr9, .roundTop {
+    border: 2px solid #ee826285;
+    border-radius: 10px;
 }
 
 .headstone {
@@ -99,17 +107,6 @@ body {
     border-radius: 3px;
 }
 
-.informationRight {
-    width: 150px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 3px;
-    padding: 3px;
-    border-radius: 3px;
-
-}
 
 .informationLeft select {
     width: 145px;
@@ -133,6 +130,17 @@ body {
     font-size: 12px;
 }
 
+.informationRight {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3px;
+    padding: 3px;
+    border-radius: 3px;
+
+}
 
 .informationRight textarea {
     resize: none;
@@ -140,4 +148,18 @@ body {
     border-radius: 5px;
     padding: 5px;
     font-size: 12px;
+}
+
+.updateButton {
+    width: 100px;
+    padding: 12px;
+    margin: 0 25px;
+    border: 2px solid #ee826285;
+    border-radius: 10px;
+    transition: all 0.2s ease-in;
+}
+
+.updateButton:active {
+    background-color: #eaeaae;
+
 }
