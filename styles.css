@@ -10,7 +10,6 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh
-
 }
 
 .main {
@@ -56,22 +55,34 @@ body {
     padding: 10px 0;
 }
 
-.ogee{
+.ogee {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75px;
-    height: 75px; 
+    height: 75px;
+
 }
 
-.pr9{
+.pr9 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75px;
-    height: 75px; 
+    height: 75px;
 }
 
 .roundTop {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75px;
-    height: 75px; 
+    height: 75px;
 }
 
-.ogee, .pr9, .roundTop {
+.ogee,
+.pr9,
+.roundTop {
     border: 2px solid #ee826285;
     border-radius: 10px;
 }
@@ -81,7 +92,6 @@ body {
     border-radius: 10px;
     width: 300px;
     height: 350px;
-    
 }
 
 .information {
@@ -94,7 +104,7 @@ body {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    
+
 }
 
 .informationLeft {
@@ -117,7 +127,8 @@ body {
     background-color: white;
 }
 
-.informationLeft, .informationRight label {
+.informationLeft,
+.informationRight label {
     font-size: 12px;
 }
 
@@ -162,4 +173,18 @@ body {
 .updateButton:active {
     background-color: #eaeaae;
 
+}
+
+/* headstone template background images */
+
+.ogeeBackground {
+    background-image: url(images/ogeetop.svg);
+}
+
+.pr9Background {
+    background-image: url(images/pr9Top.svg);
+}
+
+.roundTopBackground {
+    background-image: url(images/roundtop.svg);
 }
