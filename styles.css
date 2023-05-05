@@ -37,7 +37,7 @@ body {
 }
 
 .footer {
-    background-color: #eaeaae;
+    background-color: #eaeaae95;
 }
 
 .footer ul li {
@@ -90,6 +90,10 @@ body {
 .headstone {
     border: 2px solid #ee826285;
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
     width: 300px;
     height: 350px;
 }
@@ -187,4 +191,57 @@ body {
 
 .roundTopBackground {
     background-image: url(images/roundtop.svg);
+}
+
+/* Formatting the divs that will display the inputted information */
+
+.headstoneHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 60px;
+    border: 1px solid black;
+    margin: 0 0 10px 0;
+    text-align: center;
+}
+
+.headstoneName {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 0 5px 0;
+    text-align: center;
+    text-transform: capitalize;
+    
+    
+
+}
+
+.headstoneDates {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 200px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-size: 15px;
+
+}
+
+.headstoneInscription {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    margin: 0 0 50px 0;
+    text-align: center;
+
 }
