@@ -4,6 +4,7 @@ const ogeeShape = document.querySelector('.ogee');
 const pr9Shape = document.querySelector('.pr9');
 const roundTopShape = document.querySelector('.roundTop');
 const headstoneTemplate = document.querySelector('.headstone')
+const updateButton = document.querySelector('.updateButton');
 let templateCounter = 0;
 
 // Variables & functions for gathering the information for the inscription
@@ -89,6 +90,13 @@ function pushAll() {
     pushDates();
     pushInscription();
 }
+
+// Make the Update button functional
+
+updateButton.addEventListener('click', getAll);
+updateButton.addEventListener('click', pushAll);
+
+
 // Functions that changes the template shape
 
 function ogeeTemplate() {
